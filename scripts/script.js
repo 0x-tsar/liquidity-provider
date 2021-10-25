@@ -3,7 +3,6 @@ const Dai = artifacts.require("Dai");
 
 module.exports = async () => {
   try {
-    // console.log(Collateral);
     const collateral = await Collateral.deployed();
     const dai = await Dai.deployed();
     const [account, _] = await web3.eth.getAccounts();
